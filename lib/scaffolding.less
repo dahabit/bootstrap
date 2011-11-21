@@ -29,12 +29,12 @@ body {
   > .sidebar {
     position: absolute;
     top: 0;
-    left: 20px;
+    right: 20px;
     width: 220px;
   }
   // TODO in v2: rename this and .popover .content to be more specific
   > .content {
-    margin-left: 240px;
+    margin-right: 240px;
   }
 }
 
@@ -77,7 +77,7 @@ a {
 
 .row {
   .clearfix();
-  margin-left: -@gridGutterWidth;
+  margin-right: -@gridGutterWidth;
 }
 
 // Find all .span# classes within .row and give them the necessary properties for grid columns (supported by all browsers back to IE7)
@@ -134,6 +134,6 @@ a {
 .span-one-third     { width: 300px; }
 .span-two-thirds    { width: 620px; }
 .row {
-  > .offset-one-third   { margin-left: 340px; }
-  > .offset-two-thirds  { margin-left: 660px; }
+  > .offset-one-third   { margin-right: 340px; }
+  > .offset-two-thirds  { margin-right: 660px; }
 }

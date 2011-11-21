@@ -20,7 +20,7 @@ fieldset {
     font-size: @basefont * 1.5;
     line-height: 1;
     color: @grayDark;
-    *padding: 0 0 5px 145px; /* IE6-7 */
+    *padding: 0 145px 5px 0; /* IE6-7 */
     *line-height: 1.5; /* IE6-7 */
   }
 }
@@ -44,15 +44,15 @@ label {
   padding-top: 6px;
   font-size: @basefont;
   line-height: @baseline;
-  float: left;
+  float: right;
   width: 130px;
-  text-align: right;
+  text-align: left;
   color: @grayDark;
 }
 
 // Shift over the inside div to align all label's relevant content
 form .input {
-  margin-left: 150px;
+  margin-right: 150px;
 }
 
 // Checkboxs and radio buttons
@@ -257,7 +257,7 @@ textarea.xxlarge {
   display: inline-block;
   float: none;
   width: ((@gridColumnWidth) * @columnSpan) + (@gridGutterWidth * (@columnSpan - 1)) - 10;
-  margin-left: 0;
+  margin-right: 0;
 }
 input,
 textarea {
@@ -299,7 +299,7 @@ textarea[readonly] {
   margin-bottom: @baseline;
   padding: (@baseline - 1) 20px @baseline 150px;
   border-top: 1px solid #ddd;
-  .border-radius(0 0 3px 3px);
+  .border-radius(3px 3px 0 0);
   .secondary-action {
     float: right;
     a {
@@ -320,7 +320,7 @@ textarea[readonly] {
   color: @grayLight;
 }
 .help-inline {
-  padding-left: 5px;
+  padding-right: 5px;
   *position: relative; /* IE6-7 */
   *top: -5px; /* IE6-7 */
 }
@@ -335,7 +335,7 @@ textarea[readonly] {
 .inline-inputs {
   color: @gray;
   span {
-    padding: 0 2px 0 1px;
+    padding: 0 1px 0 2px;
   }
 }
 
@@ -350,13 +350,13 @@ textarea[readonly] {
     background: #f5f5f5;
     border: 1px solid #ccc;
     z-index: 2;
-    float: left;
+    float: right;
     display: block;
     width: auto;
     min-width: 16px;
     height: 18px;
-    padding: 4px 4px 4px 5px;
-    margin-right: -1px;
+    padding: 4px 5px 4px 4px;
+    margin-left: -1px;
     font-weight: normal;
     line-height: 18px;
     color: @grayLight;
@@ -376,13 +376,13 @@ textarea[readonly] {
 }
 .input-append {
   input {
-    float: left;
+    float: right;
     .border-radius(3px 0 0 3px);
   }
   .add-on {
     .border-radius(0 3px 3px 0);
-    margin-right: 0;
-    margin-left: -1px;
+    margin-left: 0;
+    margin-right: -1px;
   }
 }
 
@@ -400,9 +400,9 @@ textarea[readonly] {
     float: none;
     width: auto;
     padding: 0;
-    margin-left: 20px;
+    margin-right: 20px;
     line-height: @baseline;
-    text-align: left;
+    text-align: right;
     white-space: normal;
     strong {
       color: @gray;
@@ -413,7 +413,7 @@ textarea[readonly] {
     }
   }
   .inputs-list {
-    margin-left: 25px;
+    margin-right: 25px;
     margin-bottom: 10px;
     padding-top: 0;
   }
@@ -426,33 +426,33 @@ textarea[readonly] {
   input[type=radio],
   input[type=checkbox] {
     margin-bottom: 0;
-    margin-left: -20px;
-    float: left;
+    margin-right: -20px;
+    float: right;
   }
 }
 
 // Stacked forms
 .form-stacked {
-  padding-left: 20px;
+  padding-right: 20px;
   fieldset {
     padding-top: @baseline / 2;
   }
   legend {
-    padding-left: 0;
+    padding-right: 0;
   }
   label {
     display: block;
     float: none;
     width: auto;
     font-weight: bold;
-    text-align: left;
+    text-align: right;
     line-height: 20px;
     padding-top: 0;
   }
   .clearfix {
     margin-bottom: @baseline / 2;
     div.input {
-      margin-left: 0;
+      margin-right: 0;
     }
   }
   .inputs-list {
@@ -468,12 +468,12 @@ textarea[readonly] {
   div.clearfix.error {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 0;
-    margin-left: -10px;
+    margin-right: -10px;
   }
   .actions {
-    margin-left: -20px;
-    padding-left: 20px;
+    margin-right: -20px;
+    padding-right: 20px;
   }
 }

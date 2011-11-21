@@ -51,19 +51,19 @@
     line-height: @lineHeight;
   }
   .sans-serif(@weight: normal, @size: 14px, @lineHeight: 20px) {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: @size;
     font-weight: @weight;
     line-height: @lineHeight;
   }
   .serif(@weight: normal, @size: 14px, @lineHeight: 20px) {
-    font-family: "Georgia", Times New Roman, Times, serif;
+    font-family: Times New Roman, Times, serif;
     font-size: @size;
     font-weight: @weight;
     line-height: @lineHeight;
   }
   .monospace(@weight: normal, @size: 12px, @lineHeight: 20px) {
-    font-family: "Monaco", Courier New, monospace;
+    font-family: Courier New, monospace;
     font-size: @size;
     font-weight: @weight;
     line-height: @lineHeight;
@@ -86,8 +86,8 @@
 // Necessary grid styles for every column to make them appear next to each other horizontally
 .gridColumn() {
   display: inline;
-  float: left;
-  margin-left: @gridGutterWidth;
+  float: right;
+  margin-right: @gridGutterWidth;
 }
 // makeColumn can be used to mark any element (e.g., .content-primary) as a column without changing markup to .span something
 .makeColumn(@columnSpan: 1) {
