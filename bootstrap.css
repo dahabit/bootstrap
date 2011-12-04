@@ -964,9 +964,9 @@ textarea[readonly] {
   padding: 0 1px 0 2px;
 }
 .input-prepend input, .input-append input {
-  -webkit-border-radius: 0 3px 3px 0;
-  -moz-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
 }
 .input-prepend .add-on, .input-append .add-on {
   position: relative;
@@ -985,9 +985,9 @@ textarea[readonly] {
   color: #bfbfbf;
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
 }
 .input-prepend .active, .input-append .active {
   background: #a9dba9;
@@ -1000,14 +1000,14 @@ textarea[readonly] {
 }
 .input-append input {
   float: right;
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
-}
-.input-append .add-on {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
+}
+.input-append .add-on {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
   margin-left: 0;
   margin-right: -1px;
 }
@@ -1442,7 +1442,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .topbar div > ul.secondary-nav, .nav.secondary-nav {
-  float: right;
+  float: left;
   margin-right: 10px;
   margin-left: 0;
 }
@@ -1568,9 +1568,9 @@ a.menu:after, .dropdown-toggle:after {
   border-color: rgba(0, 0, 0, 0.2);
   border-style: solid;
   border-width: 0 1px 1px;
-  -webkit-border-radius: 6px 6px 0 0;
-  -moz-border-radius: 6px 6px 0 0;
-  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1670,9 +1670,9 @@ a.menu:after, .dropdown-toggle:after {
   margin-left: 2px;
   line-height: 34px;
   border: 1px solid transparent;
-  -webkit-border-radius: 0 0 4px 4px;
-  -moz-border-radius: 0 0 4px 4px;
-  border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 .tabs > li > a:hover {
   text-decoration: none;
